@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color List</title>
     <script defer src="main.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div>
-        <label>Color Name:</label>
-        <input type="text" id="textBox">
+    <h3 class="display-5 text-center text-primary p-3">Add color to the list</h3>
 
-        <button type="button" onclick="addColorToList()">Add color to the list</button>
+    <div class="container col-5 border border-primary p-3 rounded-5">
+        <form>
 
-        <p id="sumColors"></p>
+            <label class="form-label" id="ColorName">Color Name:</label>
+            <input type="text" id="textBox" id="ColorName" class="form-control">
+            
+            <div class="d-grid m-3 col-8 mx-auto">
+                <button type="button" onclick="addColorToList()" class="btn btn-primary">Add color to the list</button>
+            </div>
+            
+        </form>
+        <p id="sumColors" class="display-6 text-center"></p>
     </div>
 
-    <div>
-        <table>
+    <div class="container col-3 p-3">
+        <table class="table text-center table-hover">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -32,6 +42,8 @@
         </table>
     </div>
 
-         
+
+
 </body>
+
 </html>
