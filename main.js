@@ -64,14 +64,11 @@ function clearForm(){
 
 
 const temp = document.getElementById("sumColors");
-// colorListTable.InnerHTML = `
-// <tr>
-//     <td>red</td>
-//     <td style="background-color: red"></td>
-// </tr>`;
-// colorListTable.InnerHTML = `
-// <tr>
-//     <td>red</td>
-//     <td>---</td>
-// </tr>`;
+
+const colorListTable = document.getElementById("colorListTable");
+colorListTable.InnerHTML = `
+<tr>
+    <td>red</td>
+    <td>---</td>
+</tr>`;
 
